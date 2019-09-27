@@ -1,7 +1,7 @@
 import json
 
 totalTracks = []
-totalBatch = 20
+totalBatch = 50
 
 tracksFile = open("tracks.json", "r")
 tracks = json.loads(tracksFile.read())
