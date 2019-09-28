@@ -9,7 +9,7 @@ totalTracks = len(tracks)
 tracksFile.close()
 pages = totalTracks / totalBatch
 
-for x in range(pages):
+for x in range(pages+1):
     file = open("tracks/tracks-"+str(x)+".json", "w")
     file.write(json.dumps(tracks[slice(x*totalBatch, totalBatch*(x+1))]))
     file.close()
